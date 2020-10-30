@@ -1,6 +1,13 @@
 def divide(arg1, arg2):
-    result = int(arg1) / int(arg2)
-    return result
+    try:
+        result = arg1 / arg2
+        return result
+    except CalculatorInputError:
+        print("You have entered an invalid character, please try again.")
+    except ZeroDivisionError: 
+        print("Sorry, you can't divide by 0!")
+    finally:
+        print("I will run no matter what!")
 
 numbers = []
 def divideList(numbers):

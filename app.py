@@ -11,10 +11,10 @@ print("4: Division")
 
 userSelection = input("Please enter your selection: ")
 if userSelection in ("1", "2", "3", "4"):
-    input("Please enter your first number: ")
-    numberOne = input()
+    input("Please enter your first number: ") 
+    numberOne = int(input())
     input("Please enter your second number: ")
-    numberTwo = input()
+    numberTwo = int(input())
     if userSelection == "1":
         print("Your result: " + str(addition.add(numberOne, numberTwo)))
     elif userSelection == "2":
@@ -26,7 +26,8 @@ if userSelection in ("1", "2", "3", "4"):
 
 userSelection = input("Please enter your selection: ")
 if userSelection in ("1", "2", "3", "4"):
-    myList = input("Enter a list of numbers, SEPARATED by WHITE SPACE: ")
+    input("Enter a list of numbers, SEPARATED by WHITE SPACE: ")
+    myList = input()
     myList = myList.split()
     if userSelection == "1":
         print("Your result: " + str(addition.addList(myList)))

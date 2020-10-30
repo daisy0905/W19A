@@ -1,5 +1,5 @@
 def add(arg1, arg2):
-    result = int(arg1) + int(arg2)
+    result = arg1 + arg2
     return result
 
 numbers = []
