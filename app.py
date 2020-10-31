@@ -3,11 +3,11 @@ import subtraction
 import multiplication
 import division
 
-class Error(Exception):
-    pass
+# class Error(Exception):
+#     pass
 
-class CalculatorInputError(Error):
-    pass
+# class CalculatorInputError(Error):
+#     pass
 
 print("Welcome to the simple calculator, please select from the following options: ")
 print("1: Addition")
@@ -33,7 +33,7 @@ if userSelection in ("1", "2", "3", "4"):
     #         break
     #     except CalculatorInputError:
     #         print("You have input invalid Character.")
-    
+
     print("Please enter your second number: ")
     while(True):
         try: 
