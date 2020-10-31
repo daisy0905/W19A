@@ -7,11 +7,10 @@ def divide(arg1, arg2):
     except ZeroDivisionError: 
         print("Sorry, you can't divide by 0!")
     finally:
-        print("I will run no matter what!")
+        print("We have made it out alive!")
 
-numbers = []
 def divideList(numbers):
     result = int(numbers[0])
     for number in numbers[1:]:
-        result = result / int(number)
+        result = result / number
     return result
